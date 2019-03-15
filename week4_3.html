@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Closures</title>
+	<script type="text/javascript">
+	function A(a)
+	{
+		var dict = {1:"Monday",2:"Tuesday",3:"Wednesday",4:"Thursday",5:"Friday",6:"Saturday",7:"Sunday"}
+		function B()
+		{
+			if(dict[a]!=undefined)
+				document.write(dict[a]);
+		}
+		B()
+	}
+	</script>
+</head>
+<body>
+	<script type = "text/javascript">
+	var a = prompt("Enter Day Number :")
+	A(a);
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+var a = 37;
+var ty = 'global';
+function check() {
+	var a = 59;
+	var ty = 'local';
+	document.write("a = "+a+" type= "+ty+"<br>");
+}
+</script>
+</head>
+<body>
+<input type="button" value="submit" onclick="check()">
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scopes</title>
+	<script type="text/javascript">
+	var a = prompt("Enter a Number : ");
+	function check()
+	{
+		var b = prompt("Enter another : ");		
+		if(a==b)
+			return(a*b);
+		else
+		{
+			if(a<b)			
+				return(a);
+			else
+				return(b);
+		}
+	}
+	</script>
+</head>
+<body>
+	
+	<script type="text/javascript">
+	var c = check();
+	document.write(c);
+	</script>
+</body>
+</html>
+	

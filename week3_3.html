@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div{border: 1px solid black;}
+  
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+function checkForm(form)
+  {
+  
+   if(form.name.value==""||form.uname.value==""||form.pass1.value==""||form.pass2.value==""||form.email.value=="")
+    {
+    alert("fields can't be empty!");
+    }
+    else
+    {
+    if(form.pass1.value!=form.pass2.value) {
+       alert("The passwords do not match!");
+       form.fieldname.focus();
+       return false;
+    }
+ 
+ if(!(form.c.checked)) {
+      alert("The checkbox IS NOT checked");
+    }
+   
+    if(form.date.value<1900 || form.date.value>2000)
+    {
+    alert("Incorrect year of birth, please retry!");
+ }
+ 
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form.email.value))
+  {
+    return (true)
+  }
+  else{
+    alert("You have entered an invalid email address!")
+    return (false)
+    }
+   
+    return true;
+    }
+  }
+
+</script>
+<div>
+<form method="POST" action="#" onsubmit="return checkForm(this);">
+Name: <input type="text" name="name" placeholder="K Ramya"><br/><br/>
+Username: <input type="text" name="uname" placeholder="ramyak"><br/><br/>
+Password: <input type="password" name="pass1" placeholder="******"><br/><br/>
+Password: <input type="password" name="pass2" placeholder="****"><br/><br/>
+Year of Birth:<input type="number" name="date" placeholder="12-03-1998"><br/><br/>
+E-mail Address: <input type="text" name="email" placeholder="ramyak@gmail.com"><br/><br/>
+<input type="checkbox" name="c" value="cc">I agree to the terms and conditions<br/><br/>
+<input type="submit" value="CLick"><br/><br/><br/>
+</form>
+</div>
+
+</body>
+</html>
+

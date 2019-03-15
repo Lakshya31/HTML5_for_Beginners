@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div{border: 1px solid black;}
+  
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;}
+</style>
+<script type="text/javascript">
+function checkForm()
+  {
+
+
+link1="https://www.google.com/search?q="+document.getElementById("ht").value;
+link2="https://www.google.com/maps/place/"+document.getElementById("ht").value;
+str="link to your ht";
+ document.getElementById("foo").innerHTML="Name : "+document.getElementById("name").value+"\n  year of birth = "+(2019-(document.getElementById("date").value))+"\n  "+document.getElementById("ht").value.link(link1)+"<br/><br/>"+str.link(link2);
+  
+   
+    }
+  
+
+</script>
+
+
+</head>
+<body>
+
+<div>
+<form>
+ Enter Name: <input type="text" id="name" placeholder="K Ramya"><br/><br/>
+Enter Age:<input type="number" id="date" placeholder="25"><br/><br/>
+Enter hometown:<input type="text" id="ht" placeholder="Mysore"><br/><br/>
+<input type="button" value="CLick" onclick="checkForm()"><br/><br/><br/>
+</form>
+</div>
+<div id="foo">
+
+</div>
+</body>
+</html>
+

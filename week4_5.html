@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asynchronous</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var rankings = ['alice','bob','eve'];
+	for(var i=0, len = rankings.length;i<len;i++)
+	{
+		setTimeout(function() {
+			console.log(i,rankings[i]);
+		},i*1000);
+	}
+	</script>
+</body>
+</html>

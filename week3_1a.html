@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title> Concatenating of two strings</title>
+	<script type = 'text/javascript'>
+	function mixUp(str1,str2)
+	{
+		var first1 = str1.slice(0,2);
+		var first2 = str2.slice(0,2);
+		var last1 = str1.slice(2,str1.length)
+		var last2 = str2.slice(2,str2.length)
+		var str3 = first2.concat(last1);
+		var str4 = first1.concat(last2);
+		var result = str3.concat(" ");
+		document.write(result.concat(str4));
+	}
+	</script>
+</head>
+
+<body>
+	<script type = "text/javascript">
+	var str1 = prompt("Enter first String : ");
+	var str2 = prompt("Enter second string : ");
+	mixUp(str1,str2);
+	</script>
+</body>
+</head> 
+
+	
+

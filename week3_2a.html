@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script type = "text/javascript">
+	var dict = {"merry":"god","christmas":"jul","and":"och","happy":"gott","new":"nytt","year":"ar"};
+	function rplce(str)
+	{
+		var list = str.split(" ");
+		for(i=0;i<list.length;i++)
+		{
+			if(dict[list[i]] != undefined)
+				document.write(dict[list[i]]);
+			else
+				document.write(list[i]);
+			document.write(" ");
+		}
+	}
+	</script>
+</head>
+<body>
+	<script type = "text/javascript">
+	var str = prompt("Enter String : ");
+	rplce(str);
+	</script>
+</body>
+</html> 
+	

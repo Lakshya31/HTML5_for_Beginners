@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title> Concatenating of two strings</title>
+	<script type = 'text/javascript'>
+	function verbing(str)
+	{
+		if(str.length<3)
+		{
+			document.write(str);
+		}
+		else
+		{
+			var temp = str.slice(str.length-3,str.length);
+			var n = temp.localeCompare("ing");
+			if(n==0)
+			{
+				document.write(str.concat("ly"));
+			}
+			else
+			{
+				document.write(str.concat("ing"));
+			}
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<script type = "text/javascript">
+	var str = prompt("Enter String : ");
+	verbing(str);
+	</script>
+</body>
+</head> 
+
+	
+

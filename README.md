@@ -1,2 +1,3 @@
-# weblab
-6th Sem Web Lab
+# MEAN Stack
+
+Basic HTML5 Programs
